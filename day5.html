@@ -2,42 +2,129 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Selectors</title>
 
     <style>
-        /* For Id we have to use # */
-        #main-heading{
-            color: red;
-        }
+      /* For Id we have to use # */
+      #main-heading {
+        color: red;
+      }
 
-        /* For class we have to use . */
-        .main-heading{
-            color: blue;
-        }
+      /* For class we have to use . */
+      .main-heading {
+        color: blue;
+      }
 
-        /* For tag we have to use tag name */
-        h2{
-            color: green;
-        }
+      /* For tag we have to use tag name */
+      h2 {
+        color: green;
+      }
+
+      /* For universal selector we have to use * */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* For attribute selector we have to use [] */
+      img[title] {
+        border: 2px solid red;
+      }
+      /* This means select those image who have alt attribute */
+      img[alt] {
+        border: 2px solid green;
+        border-radius: 15px;
+      }
+
+      /* Style those anchor who have target attribute */
+      a[target] {
+        color: red;
+      }
+
+      
+      /* Select attribute with exact value */
+      a[href="https://www.google.com"]
+      {
+        color: green;
+      }
+
+      img[width="300px"] {
+        border: 2px solid blue;
+      }
+
+      /* Select attribute with partial value */
+      a[href*="google"] {
+        color: cyan;
+      }
+
+      /* Select attribute with starting value */
+      a[href^="https"] {
+        color: magenta;
+      }
+
+      /* Select attribute with ending value */
+      a[href$="com"] {
+        color: purple;
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="main-heading">
-        <h1>Heading</h1>
+      <h1>Heading</h1>
     </div>
-
 
     <div class="main-heading">
-        <h2>Sub heading</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam nihil rem nostrum assumenda cumque voluptatibus eum laboriosam vero impedit eos dicta illo ducimus veritatis dolor recusandae architecto id, quasi officiis quod, dolorum autem? Dolor libero quasi quos quis maxime fugiat architecto eos repudiandae neque quas laborum ratione delectus excepturi perspiciatis veniam, magni nostrum in optio esse. Repellendus dignissimos nulla iure minima culpa unde quos facilis minus, voluptas maxime autem qui sapiente quisquam ipsum temporibus est similique ipsa. Esse, nobis libero! Voluptatum neque dolorem, enim non debitis dolor velit accusamus odit consequatur, repudiandae unde eligendi doloremque quaerat magnam, molestias voluptates.</p>
-    </div>
-    </body>
-    </html>
+      <h2>Sub heading</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magnam
+        nihil rem nostrum assumenda cumque voluptatibus eum laboriosam vero
+        impedit eos dicta illo ducimus veritatis dolor recusandae architecto id,
+        quasi officiis quod, dolorum autem? Dolor libero quasi quos quis maxime
+        fugiat architecto eos repudiandae neque quas laborum ratione delectus
+        excepturi perspiciatis veniam, magni nostrum in optio esse. Repellendus
+        dignissimos nulla iure minima culpa unde quos facilis minus, voluptas
+        maxime autem qui sapiente quisquam ipsum temporibus est similique ipsa.
+        Esse, nobis libero! Voluptatum neque dolorem, enim non debitis dolor
+        velit accusamus odit consequatur, repudiandae unde eligendi doloremque
+        quaerat magnam, molestias voluptates.
+      </p>
 
-    <!-- 
+      <!-- Example of Attribute selectors -->
+      <img
+        src="https://picsum.photos/id/237/200/300"
+        title="Image"
+        width="200ps"
+      />
+
+      <img
+        src="https://picsum.photos/id/237/200/300"
+        alt="Image not found"
+        width="200ps"
+      />
+      <!-- Attributes in the above images are -> src,alt,title, width   -->
+
+      <input type="radio" id="gender" name="gender" value="male" />
+      <!-- Attributes in the input element are -> type, id, name, value -->
+      <br /><br />
+      <a href="https://www.google.com" target="_blank">Link of Google</a><br />
+      <a href="https://www.youtube.com">Link of Youtube</a>
+    </div>
+
+    <div class="attribute">
+      <img
+        src="https://picsum.photos/id/237/200/300"
+        alt="Image not found"
+        width="300px"
+      />
+    </div>
+  </body>
+</html>
+
+<!-- 
         Some rules for Id and classes in CSS
 
         Id -> It is unique and can be used only once in a page
@@ -47,3 +134,15 @@
         One tag can have only one id
         
      -->
+
+<!-- Types of Selectors in CSS
+            
+            1. Id Selector
+            2. Class Selector
+            3. Tag Selector
+            4. Universal Selector denoted by *
+            5. Attribute Selector denoted by []
+            6. Pseudo Selector
+            7. Pseudo Element Selector
+
+    -->
