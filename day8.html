@@ -1,0 +1,211 @@
+<!-- CSS Text -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Text Styling</title>
+    <style>
+
+      .text-color {
+        color: red;
+      }
+
+      .text-bgclr {
+        background-color: yellow;
+      }
+
+      #line-height {
+        line-height: 2;
+        text-decoration: overline;
+        text-decoration-color: red;
+        text-decoration-style: double;
+      }
+
+      #letter-space {
+        letter-spacing: 5px;
+        text-decoration-line: overline;
+        text-decoration-color: red;
+      }
+
+      #indent {
+        text-indent: 50px;
+      }
+
+      #text-align {
+        /* text-align: justify; */
+        /* text-align: center; */
+        /* text-align: end; */
+        /* text-align: start; */
+
+        /* The text-align-last property specifies how to align the last line of a text. */
+
+        text-align-last: center;
+        text-decoration: line-through;
+      }
+
+      #vertical-align {
+        /* vertical-align: baseline; */
+        /* vertical-align: sub; */
+        /* vertical-align: super; */
+        /* vertical-align: text-top; */
+        /* vertical-align: text-bottom; */
+        /* vertical-align: middle; */
+        /* vertical-align: top; */
+        /* vertical-align: bottom; */
+        /* vertical-align: 50px; */
+
+        text-decoration: underline;
+      }
+
+      #text-transform {
+        /* text-transform: capitalize; */
+        /* text-transform: initial; */
+        /* text-transform: lowercase; */
+        text-transform: uppercase;
+      }
+
+      #word-spacing {
+        word-spacing: 5px;
+      }
+
+      #text-shadow1 {
+        text-shadow: 2px 2px #ff0000;
+        /* text-shadow: "horizonatal" "vertical" "color" */
+      }
+
+
+      #text-shadow2 {
+        text-shadow: 2px 2px 5px green;
+        /* text-shadow: "horizonatal" "vertical" "blur" "color" */
+      }
+
+
+      #text-shadow3 {
+        font-weight: bolder;
+        font-size: larger;
+        text-shadow: 2px 2px 3px blue, 6px 6px 5px red;
+        /* text-shadow: "horizonatal" "vertical" "blur" "color" ,"horizonatal" "vertical" "blur" "color" */
+      }
+
+      .text-shadow-only {
+        text-shadow: 2px 2px 2px red; /* Text shadow properties */
+        color: transparent; /* Make the text color transparent, effectively hiding the main text */
+        font-size: 24px; /* Adjust the font size as needed */
+        /* Other styling properties */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-color text-bgclr">
+      This file Contains code related to text styling
+    </h1>
+
+    <h2 id="line-height">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, ab!
+    </h2>
+
+    <p id="letter-space">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+
+    <p id="indent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt
+      iure, similique illo dolorem eveniet quidem maxime fugiat perspiciatis
+      eum, laborum error architecto, voluptatibus totam eos dignissimos deleniti
+      delectus aliquam tempora. Tenetur officia reprehenderit suscipit accusamus
+      ab, iure optio cum sit. Molestiae consequatur accusantium eveniet ex vel
+      cupiditate cum iusto, tempore pariatur recusandae sapiente, quibusdam
+      dignissimos facilis molestias quae magnam dolorem natus modi voluptate
+      expedita saepe repellat! Sequi laborum cum est provident adipisci dolorum
+      ab ullam reiciendis in explicabo, labore inventore, sint molestiae maiores
+      quasi consequuntur quae aspernatur nesciunt voluptatem voluptatum repellat
+      expedita facilis? Voluptas rerum vel laborum veniam ad.
+    </p>
+
+    <p id="text-align">
+      Lorem ipsum dolor sit amet Lorem ipsum dolor sit, amet consectetur
+      adipisicing elit. Repellendus dolorum quibusdam corporis repudiandae
+      molestias beatae vel consectetur, dicta eos sed ipsum ducimus
+      necessitatibus dolore rerum facilis distinctio? Ad odio illum molestias
+      ipsum id quod et assumenda nam quas consequatur rerum omnis, odit natus
+      mollitia sint eos quaerat ut neque suscipit!.
+    </p>
+
+    <p id="vertical-align">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+      accusamus.
+    </p>
+
+    <p id="text-transform">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus,
+      accusamus.
+    </p>
+
+    <p id="word-spacing">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet aliquid
+      ex ullam unde, quam nihil cum reiciendis numquam sit corrupti consequatur
+      ducimus. Dignissimos, ipsam perspiciatis ex nesciunt reiciendis autem
+      earum.
+    </p>
+
+    <p id="text-shadow1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing.
+    </p>
+
+    <p id="text-shadow2">
+      Lorem ipsum, dolor sit amet consectetur adipisicing.
+    </p>
+
+    <p id="text-shadow3">
+      Lorem ipsum, dolor sit amet consectetur adipisicing.
+    </p>
+
+    <div class="text-shadow-only">Your Text</div>
+  </body>
+</html>
+
+<!-- 
+
+
+The CSS Text Alignment/Direction Properties
+Property	    Description
+direction	    Specifies the text direction/writing direction
+text-align	    Specifies the horizontal alignment of text
+text-align-last	Specifies how to align the last line of a text
+unicode-bidi	Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document
+
+vertical-align	Sets the vertical alignment of an element
+
+
+The CSS Text Decoration Properties
+Property	            Description
+text-decoration	        Specifies the decoration added to text
+text-decoration-color	Specifies the color of the text-decoration
+text-decoration-line	Specifies the type of line in a text-decoration
+text-decoration-style	Specifies the style of the line in a text-decoration
+text-shadow	            Adds shadow to text 
+
+
+Text Transformation
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+
+Text Spacing
+In this chapter you will learn about the following properties:
+
+text-indent
+letter-spacing
+line-height
+word-spacing
+white-space
+
+
+Text Shadow
+The text-shadow property adds shadow to text.
+
+In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):
+
+ -->
