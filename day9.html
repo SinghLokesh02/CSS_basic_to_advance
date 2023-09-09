@@ -1,0 +1,115 @@
+<!-- CSS Display Property -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+
+    <style>
+      /* Display none remove the content from the page */
+      .none {
+        background-color: red;
+        display: none;
+      }
+
+      /* Inline element take the space of the content */
+      .block {
+        display: inline;
+        /* height: 200px; This will not work */
+        /* width: 200px; This will not work */
+      }
+      #block1 {
+        background-color: red;
+        margin-right: 10px;
+      }
+      #block2 {
+        background-color: yellow;
+        margin-right: 10px;
+      }
+
+      /* Block element take the whole space of the page */
+      #inline1 {
+        display: block;
+        color: magenta;
+      }
+      #inline2 {
+        display: block;
+        color: rgb(255, 85, 0);
+      }
+
+      /* Inline Block element take the space of the content */
+      #inline-block1 {
+        display: inline-block;
+        /* height: 200px;  The height and width will work in inline-block element*/
+        /* width: 200px; */
+        color: rgb(0, 255, 0);
+      }
+      #inline-block2 {
+        display: inline-block;
+        /* height: 200px;  The height and width will work in inline-block element*/
+        /* width: 200px; */
+        color: sienna;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline Element by Default we make it Block -->
+    <div class="inline">
+      <span id="inline1">This is Inline Element 1</span>
+      <span id="inline2">This is Inline Element 2</span>
+    </div>
+
+    <!-- Block Element by Default we make it inline -->
+    <div class="block">
+      <span id="block1">This is Block Element 1</span>
+      <span id="block2">This is Block Element 2</span>
+    </div>
+
+    <!-- 
+        Question -> What is the difference between inline and inline-block?
+
+        Answer -> The difference is that inline elements do not insert a line break after the element, and only occupy as much width as necessary.
+
+        Inline-block elements are similar to inline elements, but they can have a width and height.
+
+        Also, top and bottom margins/paddings are respected in inline-block, but with inline elements they are not.
+
+        
+
+     -->
+
+    <!-- Inline Block Element by Default we make it none -->
+    <div class="inline-block">
+      <h1 id="inline-block1">This is Inline Block Element 1</h1>
+      <h1 id="inline-block2">This is Inline Block Element 2</h1>
+    </div>
+
+    <!-- we make it none -->
+    <div class="none">
+      <span id="none1">This is None Element 1</span>
+      <span id="none2">This is None Element 2</span>
+    </div>
+
+
+  </body>
+</html>
+
+<!-- 
+    CSS Display Property
+    The display property specifies the display behavior (the type of rendering box) of an element.
+
+    In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. The default value in XML is inline, including SVG elements.
+
+    The display property is often used together with the float property to create different types of layouts.
+
+    In this code we have 4 types of display property values 
+
+    1. inline
+    2. block
+    3. inline-block
+    4. none
+    
+-->
