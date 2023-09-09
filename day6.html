@@ -1,0 +1,79 @@
+<!-- CSS Units -->
+<!-- 
+
+Unit	Description	
+em	    Relative to the font-size of the element (2em means 2 times the size of the current font)	
+
+ex	    Relative to the x-height of the current font (rarely used)	
+
+ch	    Relative to the width of the "0" (zero)	
+
+rem	    Relative to font-size of the root element	
+
+vw	    Relative to 1% of the width of the viewport*	
+
+vh	    Relative to 1% of the height of the viewport*	
+
+vmin	Relative to 1% of viewport's* smaller dimension	
+
+vmax	Relative to 1% of viewport's* larger dimension	
+
+%	    Relative to the parent element
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Units</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* vh and vw */
+      .box1 {
+        width: 100vw;
+        height: 200vh;
+        background-color: red;
+      }
+
+      /* px  */
+      .box2 {
+        width: 300px;
+        height: 400px;
+        background-color: green;
+      }
+
+      /* em and rem */
+      .box3 {
+        width: 10em;
+        height: 10em;
+        background-color: blue;
+      }
+
+      /* % */
+      .box4 {
+        width: 50%;
+        height: 50%;
+        background-color: yellow;
+      }
+
+      /* ch */
+      .box5 {
+        width: 10ch;
+        height: 10ch;
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+    </div>
+  </body>
+</html>
