@@ -1,0 +1,58 @@
+<!-- Ways to Add CSS -->
+
+<!-- 
+    Inline CSS
+    Internal CSS
+    External CSS
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to add CSS</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="first.css">
+
+
+    <!-- Inline CSS -->
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+ </head>
+ <body>
+
+    <!-- Inline CSS   -->
+    <h1 style="color: red;">This is h1 tag for inline CSS</h1>
+    
+    
+    <!-- Internal CSS -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat perspiciatis accusantium impedit corporis enim, in provident, adipisci ex ullam soluta exercitationem omnis minima totam autem tempore est magnam. Esse.
+    </p>
+
+
+    <!-- External CSS -->
+    <h1>This is h1 tag for external CSS</h1>
+
+    <!-- For External CSS we have to create a css file like first.css  and add a link tag in the head tag-->
+
+
+    <!-- 
+        Precedence of css
+        Inline CSS > Internal CSS > External CSS
+
+        If we have same property in all the three css then inline css will be applied first then internal css and then external css
+
+        Ques -> Which one is better inline css or internal css or external css? why?
+        
+        Ans -> External CSS is better because it is easy to maintain and it is reusable
+        
+        
+    -->
+    
+ </body>
+ </html>
