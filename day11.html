@@ -1,0 +1,54 @@
+<!-- CSS Overflow -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Properties</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* overflow: hidden; */
+            overflow: scroll;
+            /* overflow: auto; */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <p>Lorem ipsum dolor sit, amet consectetur erkfcghvjbkn elit. Provident tenetur molestias quisquam sint corporis, itaque maxime id consequatur ducimus vel alias dignissimos accusantium similique asperiores delectus modi deleniti voluptatum aliquid aperiam! Accusantium quisquam ipsum ipsam, nihil nam excepturi quod voluptates accusamus quaerat! Consequuntur aliquam aperiam, iusto odit architecto aspernatur voluptatem culpa temporibus ullam hic nobis quas. Velit praesentium minus itaque animi eligendi corporis magnam sed voluptatem consequatur? Itaque, excepturi libero? Quaerat sapiente ducimus eum consequuntur ipsa expedita eius fugit impedit unde quam harum nam, cumque rem qui perferendis molestias laudantium! Est repellendus nobis voluptates aperiam dolores dolorum nesciunt modi voluptatibus!</p>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+
+overflow: visible;
+overflow: hidden;
+overflow: scroll;
+overflow: auto;
+overflow: inherit;
+
+Overflow property is used to control the content overflow of an element.
+
+overflow: visible; - Default value. The content is not clipped and it may be rendered outside the content box.
+
+overflow: hidden; - The content is clipped and no scrollbars are provided.
+
+overflow: scroll; - The content is clipped and desktop browsers use scrollbars, whether or not any content is clipped. This avoids any problem with scrollbars appearing and disappearing in a dynamic environment. Printers may print overflowing content.In this case, scrollbars are always provided.
+
+overflow: auto; - In this case, scrollbars are added only when necessary.and scrollbar is visible in the side of the overflow. It may be in x or y axis.
+
+overflow: inherit; - Specifies that the value of the overflow property should be inherited from the parent element.
+
+
+overflow-x: for horizontal overflow -> to hide the horizontal overflow
+overflow-y: for vertical overflow -> to hide the vertical overflow
+
+
+ -->
