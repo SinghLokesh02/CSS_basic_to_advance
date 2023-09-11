@@ -1,0 +1,51 @@
+<!-- CSS Border -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            /* border: 3px solid green; */
+            border-top-left-radius: 30px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+
+
+            /* for all side border */
+            /* border-radius: 50px 50px 50px 50px; */
+            /* border-radius: 50px; */
+
+            /* For old brower we have to use prefix */
+
+            /* The below prefix is for older browser of chrome  
+             -webkit-border-radius: 50px; */
+
+            /* The below prefix is for older browser of morizla firefox
+            -moz-border-radius: 50px; */
+
+            /* The below prefix is for older browser of opera 
+            
+            -ms-border-radius: 50px; */
+        }
+
+        p{
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- border radius: top-left top-right bottom-right bottom-left -->
+
+    <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quas accusamus alias quasi, delectus quisquam quo. Distinctio omnis labore fugit, sed excepturi nisi voluptates pariatur. Placeat, laborum? Repellendus molestias ullam, eos natus velit saepe hic nesciunt cupiditate quaerat vitae cum!</p>
+    </div>
+</body>
+</html>
