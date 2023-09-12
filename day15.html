@@ -1,0 +1,49 @@
+<!-- CSS Background Property -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Background Property</title>
+    <style>
+   
+      #thirdpara {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("bg1.jpg");
+        background-repeat: no-repeat;
+        border: 2px solid red;
+        /* background-repeat: repeat-x; for only repeat in x-axis */
+        /* background-repeat: repeat-y; for only repeat in y-axis */
+        /* background-size: cover; */
+        /* background-size: contain;  It will */
+        background-position: center left;
+        /* background-position: 50% 50%; */
+
+        background-attachment: fixed; /* It will fix the background image */
+
+        /* background: url("bg1.jpg") no-repeat center center/cover;  It is the shorthand Property of backgriund*/
+      }
+    </style>
+  </head>
+  <body>
+    
+     <p id="thirdpara">This is third para</p>
+    
+  </body>
+</html>
+
+<!-- 
+auto ->	Default value. The background image is displayed in its original size 	
+
+length ->	Sets the width and height of the background image. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto". Read about length units 	
+
+percentage(%) ->	Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto" 	
+
+cover ->	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges 
+
+contain ->	Resize the background image to make sure the image is fully visible
+
+
+ -->
