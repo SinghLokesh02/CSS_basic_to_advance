@@ -1,0 +1,80 @@
+<!-- CSS Z-index -->
+
+<!-- 
+Why we use Z-index?
+
+Z-index is used to control the overlapping of elements. It is used to specify the stack order of positioned elements that may overlap one another.
+
+The z-index property in CSS controls the vertical stacking order of elements that overlap. As in, which one appears as if it is physically closer to you. z-index only effects elements that have a position value other than static (the default).
+
+The z-index property specifies the stack order of an element.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky).
+
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS z-index Property</title>
+    <style>
+        .box{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(255, 0, 0);
+            position: relative;
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 255, 0);
+            top: 0;
+            left: 0;
+            position: relative;
+            z-index: 5;
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 0, 255);
+            position: relative;
+            bottom: 50px;
+            left: 1%;
+            /* This box have maximum Z-index property so It is visible */
+            z-index: 0;
+        }
+        .box3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 255, 0);
+            position: relative;
+            bottom: 100px;
+            left: 2%;
+
+        }
+        .box4{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 255, 255);
+            position: relative;
+            bottom: 150px;
+            left: 3%;
+            z-index: 0;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>CSS Z-index</h1>
+
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+ </body>
+ </html>
