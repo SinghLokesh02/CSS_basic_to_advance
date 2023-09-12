@@ -1,0 +1,210 @@
+<!-- CSS Pseudo Classes Selector -->
+
+<!-- 
+The list or pseudo classes selector are defined below:
+
+1. :root
+2. :nth-child()
+3. :nth-last-child()
+4. :nth-of-type()
+5. :nth-last-of-type()
+6. :first-child
+7. :last-child
+8. :first-of-type
+9. :last-of-type
+10. :only-child
+11. :only-of-type
+12. :empty
+13. :target
+14. :enabled
+15. :disabled
+16. :checked
+17. :not(selector)
+18. ::selection
+19. :default
+20. :valid
+21. :invalid
+22. :in-range
+23. :out-of-range
+24. :required
+25. :optional
+26. :read-only
+27. :read-write
+28. :placeholder-shown
+29. :fullscreen
+30. :dir()
+31. :lang()
+32. ::first-line
+33. ::first-letter
+34. ::before
+35. ::after
+36. :first-letter
+37. :first-line
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Selectors In CSS</title>
+    <style>
+      /* First Child */
+      li:first-child {
+        color: red;
+      }
+      /* last child */
+      li:last-child {
+        color: blue;
+      }
+      p:last-child {
+        color: green;
+      }
+
+      /* nth-child */
+      li:nth-child(3) {
+        color: cyan;
+      }
+
+      /* nth-last-child */
+      li:nth-last-child(2) {
+        color: magenta;
+      }
+
+      /* nth-of-type */
+      p:nth-of-type(2) {
+        color: orange;
+      }
+
+      /* nth-last-of-type */
+      p:nth-last-of-type(1) {
+        color: pink;
+      }
+
+      /* first-of-type */
+      p:first-of-type {
+        color: purple;
+      }
+
+      /* last-of-type */
+      p:last-of-type {
+        color: brown;
+      }
+
+      /* only-child */
+      li:only-child {
+        background: linear-gradient(red, magenta, blue);
+      }
+
+      /* only-of-type */
+      p:only-of-type {
+        background: linear-gradient(red, pink, blue);
+      }
+
+      /* empty */
+      p:empty {
+        border: 2px solid red;
+        height: 100px;
+        width: 100px;
+      }
+
+      /* target */
+      #list-two:target {
+        color: purple;
+      }
+
+      /* not  it will not apply the property to not selected tag but apply to other one*/
+      input:not(.active) {
+        border: 2px dashed green;
+      }
+
+      /* selection -> It is for  */
+      input::selection {
+        border: 2px dashed red;
+      }
+
+      /* lang */
+      p:lang(de) {
+        color: red;
+      }
+
+      p:lang(fr) {
+        color: blue;
+      }
+
+      p:lang(hi) {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Check for empty pseudo selector -->
+    <p></p>
+    <h1>CSS Pseudo classes Selectors</h1>
+    <ul class="list">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li class="active">Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <ul>
+      <li>I'm the only child</li>
+    </ul>
+    <p>This is paragraph 1</p>
+    <div class="p">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit corporis
+        esse nulla accusantium non eligendi molestiae labore, expedita pariatur
+        corrupti est iure quaerat quibusdam maiores enim blanditiis. Cumque
+        sequi, magnam quos totam quidem libero.
+      </p>
+
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus,
+        voluptatibus?
+      </p>
+    </div>
+    <ul id="list-two">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li class="active">Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+
+    <div class="para">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+        consequatur?
+      </p>
+    </div>
+
+    <input type="text" class="active" />
+    <input type="text" class="active1" />
+    <input type="text" class="active2" />
+    <input type="text" class="active3" />
+
+    <!-- For lang pseudo class -->
+    <p lang="de">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+    <p lang="fr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+    <p lang="hi">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+      voluptatum.
+    </p>
+  </body>
+</html>
