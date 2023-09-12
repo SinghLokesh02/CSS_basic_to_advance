@@ -1,0 +1,69 @@
+<!-- CSS Cursor Property -->
+
+<!-- The CSS cursor property defines the type of cursor to be displayed when the pointer is placed over an element. -->
+<!-- 
+The values of this property are:
+
+auto - Default. The browser sets a cursor
+crosshair - The cursor render as a crosshair
+default - The default cursor
+pointer - The cursor render as a pointer
+move - The cursor indicates that a draggable item can be moved
+text - The cursor indicates text
+wait - The cursor indicates that the program is busy
+help - The cursor indicates that help is available
+not-allowed - The cursor indicates that the requested action will not be executed
+
+
+Study link -> https://www.w3schools.com/cssref/pr_class_cursor.php
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cursor Property</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .cursor {
+        height: 30vh;
+        width: 50vw;
+        background: linear-gradient(
+          to right,
+          rgb(255, 0, 0, 0.4),
+          rgb(0, 0, 255, 0.8)
+        );
+        /* cursor: pointer; 
+            cursor: ns-resize;
+            cursor: alias;
+            cursor: wait;
+            cursor: help;
+            
+            */
+        cursor: all-scroll;
+        border: 2px solid black;
+        margin: auto;
+        border-radius: 15px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>CSS Cursor Property</h1>
+
+    <div class="cursor">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+        tempore eaque at aliquam tempora nihil modi tenetur in molestias
+        inventore, voluptatibus ipsa quisquam minima repellendus natus, illum
+        excepturi error iste possimus officiis odit magnam eligendi, facere
+        voluptates. Molestias ipsam dolores pariatur dolorem! Incidunt
+        exercitationem ipsam inventore rerum asperiores aspernatur ducimus?
+      </p>
+    </div>
+  </body>
+</html>
