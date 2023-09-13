@@ -1,0 +1,182 @@
+<!-- CSS Pseudo Selector Extended -->
+
+<!--  
+The list or pseudo classes selector are defined below:
+
+1. :root
+2. :nth-child() ✅
+3. :nth-last-child() ✅
+4. :nth-of-type() ✅
+5. :nth-last-of-type() ✅
+6. :first-child ✅
+7. :last-child ✅
+8. :first-of-type ✅
+9. :last-of-type ✅
+10. :only-child ✅
+11. :only-of-type ✅
+12. :empty ✅
+13. :target ✅
+14. :enabled ✅
+15. :disabled ✅
+16. :checked ✅
+17. :not(selector) ✅
+18. ::selection
+19. :default
+20. :valid
+21. :invalid
+22. :in-range
+23. :out-of-range
+24. :required ✅
+25. :optional ✅
+26. :read-only
+27. :read-write
+28. :placeholder-shown ✅
+29. :fullscreen
+30. :dir()
+31. :lang() ✅
+32. ::first-line ✅
+33. ::first-letter ✅
+34. ::before ✅
+35. ::after ✅
+36. :hover ✅
+37. :link ✅
+38. :visited ✅
+39. :active ✅
+40. :focus ✅
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* First line */
+      p::first-line {
+        color: red;
+        font-size: normal;
+      }
+      /* First letter */
+      p::first-letter {
+        color: blue;
+        font-size: normal;
+      }
+
+      /* After -> Add some style of text after the html with the help of CSS */
+      p::after {
+        content: " - The End";
+        color: green;
+        font-size: auto;
+      }
+
+      /* Before -> Add some style of text before the html with the help of CSS */
+      p::before {
+        content: " - The Start ";
+        color: green;
+        font-size: auto;
+      }
+
+      /* a:link */
+      a:link {
+        color: red;
+      }
+
+      /* a:visited */
+      a:visited {
+        color: pink;
+      }
+
+      /* a:hover */
+      a:hover {
+        color: green;
+      }
+
+      /* a:active */
+      a:active {
+        color: magenta;
+      }
+
+      /* For all the input tags whose type = text */
+      input[type = "text"]:focus{
+        border:2px solid red;
+        outline: none;
+        width: 80vw;
+      }
+
+      /* For all the input tags type = radio */
+      input[type = "radio"]{
+        margin: 10px;
+      }
+
+      /* For checked boxes only */
+      input[type = "radio"]:checked{
+        box-shadow:  0 0 0 2px red;
+      }
+
+      /* For enabled input */
+      input:enabled{
+        color: green;
+      }
+
+      /* For disabled input */
+      input[type="password"]:disabled{
+        color: rgb(0, 255, 174);
+      }
+
+      /* Required */
+      input[type="text"]:required{
+        border: 2px solid red;
+      }
+
+      /* Optional */
+      input[type="text"]:optional{
+        border: 2px solid blue;
+      }
+
+      /* Placeholder shown */
+      input[type="text"]::placeholder{
+        color: red;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae eos
+      laudantium esse veniam vel iure ratione eum ipsam quas corrupti incidunt
+      laborum qui illo, mollitia eaque! Repudiandae odio itaque modi, voluptatum
+      delectus facere ab, harum, aut a incidunt iure culpa non magni? Ullam,
+      hic? Eaque culpa explicabo fugit reiciendis praesentium.
+    </p>
+
+
+    <a href="https://www.google.com" target="_blank">This is a google link</a>
+    <br>
+    <a href="https://www.youtube.com" target="_blank">This is a Youtube link</a>
+
+
+    <!-- Some input Tags -->
+    <br><br>
+    <input type="text" name="name" id="name" placeholder="Enter your name" />
+    <br><br>
+
+    <input type="text" name="email" id="email" placeholder="Enter your email" required/>
+    <br><br>
+
+    <input type="text" name="phone" id="phone" placeholder="Enter your phone" />
+    <br><br>
+
+    <input type="password" name="password" id="address" placeholder="Enter your password" disabled />
+    <br><br>
+
+    <!-- Checkbox -->
+    <label for="check">Male</label><input type="radio" name="gender" id="check" />
+    <br>
+    <label for="check">Female</label><input type="radio" name="gender" id="check" /><br>
+    <label for="check">Transgender</label><input type="radio" name="gender" id="check" />
+    
+  </body>
+</html>
