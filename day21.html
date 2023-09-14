@@ -1,0 +1,59 @@
+<!-- CSS Selector 3 -->
+<!-- 
+1) in-range
+2) out-of-range
+
+The above two selectors are used to select the input elements whose value is in range or out of range. and both will only work with the input type = number.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo Selectors</title>
+    <!-- In and out-of-range -->
+    <style>
+        input[type="number"]:in-range{
+            background-color: green;
+        }
+        input[type="number"]:out-of-range{
+            background-color: red;
+        }
+        input:read-only{
+            background-color: yellow;
+            color: chocolate;
+        }
+        input:read-write{
+            background-color: rgb(0, 255, 221);
+            color: rgb(239, 163, 110);
+        }
+        input:valid{
+            background-color: pink;
+            color: black;
+        }
+        input:invalid{
+            background-color: red;
+            color: white;
+            width: 50vh;
+        }
+    </style>
+</head>
+<body>
+    Min-age : <input type="number" id="num1" min="1" > <br><br>
+    Max-age : <input type="number" id="num2" max="100"><br><br>
+
+    <!-- For readonly -->
+    <input type="text" id="name" readonly value="Rahul"><br><br>
+
+    <!-- for read-write -->
+    <input type="text" id="name" value="Rahul"><br><br>
+
+    <!-- Valid property -->
+    <input type="text" id="name" value="Rahul" required><br><br>
+
+    <!-- Invalid property -->
+    <input type="email" id="email" placeholder="lokeshsingh7695@gmail.com" required><br><br>
+</body>
+</html>
