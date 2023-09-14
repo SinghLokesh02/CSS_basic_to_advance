@@ -1,0 +1,58 @@
+<!-- CSS Gradient -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient Property</title>
+    <style>
+        .gra{
+            height: 30vh;
+            width: 50vw;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: auto;
+            padding: 10px;
+            /* by default the direction is top to bottom */
+            /* background: linear-gradient(red,yellow); */
+            /* background: linear-gradient(to right,red,yellow); */
+            /* background: linear-gradient(to left top,red,yellow,cyan); */
+            /* background: linear-gradient(to top right,red,yellow,green); */
+
+            /* We can also use degree in the place of direction */
+            background: linear-gradient(120deg,red,yellow,magenta);
+        }
+        .gradient-radial{
+            height: 30vh;
+            width: 50vw;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin: 5vh auto;
+            padding: 10px;
+            background: radial-gradient(red 10%,yellow 20%,green 50%);
+            /* background: radial-gradient(circle,red 10%,yellow 50%,green,magenta); */
+
+
+            background: radial-gradient(closest-side at 80% 50%,red 10%,yellow 50%,green,magenta);         
+
+            background: radial-gradient(farthest-side at 60% 20%,red 10%,yellow 50%,green,magenta);         
+           
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1>CSS Gradient Property</h1>
+
+    <div class="gra">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas porro natus totam odit facilis fugiat est a reiciendis. Praesentium ea est repudiandae earum iste aperiam officiis saepe soluta laborum voluptatum mollitia quam, aut porro necessitatibus consequuntur? Nihil nulla alias corporis!</p>
+    </div>
+
+    <div class="gradient-radial">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas porro natus totam odit facilis fugiat est a reiciendis. Praesentium ea est repudiandae earum iste aperiam officiis saepe soluta laborum voluptatum mollitia quam, aut porro necessitatibus consequuntur? Nihil nulla alias corporis!</p>
+    </div>
+    
+</body>
+</html>
