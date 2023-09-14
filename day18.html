@@ -22,14 +22,14 @@ The list or pseudo classes selector are defined below:
 17. :not(selector) ✅
 18. ::selection
 19. :default
-20. :valid
-21. :invalid
-22. :in-range
-23. :out-of-range
+20. :valid ✅
+21. :invalid ✅
+22. :in-range ✅
+23. :out-of-range ✅
 24. :required ✅
 25. :optional ✅
-26. :read-only
-27. :read-write
+26. :read-only ✅ 
+27. :read-write ✅
 28. :placeholder-shown ✅
 29. :fullscreen
 30. :dir()
@@ -99,48 +99,46 @@ The list or pseudo classes selector are defined below:
       }
 
       /* For all the input tags whose type = text */
-      input[type = "text"]:focus{
-        border:2px solid red;
+      input[type="text"]:focus {
+        border: 2px solid red;
         outline: none;
         width: 80vw;
       }
 
       /* For all the input tags type = radio */
-      input[type = "radio"]{
+      input[type="radio"] {
         margin: 10px;
       }
 
       /* For checked boxes only */
-      input[type = "radio"]:checked{
-        box-shadow:  0 0 0 2px red;
+      input[type="radio"]:checked {
+        box-shadow: 0 0 0 2px red;
       }
 
       /* For enabled input */
-      input:enabled{
+      input:enabled {
         color: green;
       }
 
       /* For disabled input */
-      input[type="password"]:disabled{
+      input[type="password"]:disabled {
         color: rgb(0, 255, 174);
       }
 
       /* Required */
-      input[type="text"]:required{
+      input[type="text"]:required {
         border: 2px solid red;
       }
 
       /* Optional */
-      input[type="text"]:optional{
+      input[type="text"]:optional {
         border: 2px solid blue;
       }
 
       /* Placeholder shown */
-      input[type="text"]::placeholder{
+      input[type="text"]::placeholder {
         color: red;
       }
-
-
     </style>
   </head>
   <body>
@@ -152,31 +150,43 @@ The list or pseudo classes selector are defined below:
       hic? Eaque culpa explicabo fugit reiciendis praesentium.
     </p>
 
-
     <a href="https://www.google.com" target="_blank">This is a google link</a>
-    <br>
+    <br />
     <a href="https://www.youtube.com" target="_blank">This is a Youtube link</a>
 
-
     <!-- Some input Tags -->
-    <br><br>
+    <br /><br />
     <input type="text" name="name" id="name" placeholder="Enter your name" />
-    <br><br>
+    <br /><br />
 
-    <input type="text" name="email" id="email" placeholder="Enter your email" required/>
-    <br><br>
+    <input
+      type="text"
+      name="email"
+      id="email"
+      placeholder="Enter your email"
+      required
+    />
+    <br /><br />
 
     <input type="text" name="phone" id="phone" placeholder="Enter your phone" />
-    <br><br>
+    <br /><br />
 
-    <input type="password" name="password" id="address" placeholder="Enter your password" disabled />
-    <br><br>
+    <input
+      type="password"
+      name="password"
+      id="address"
+      placeholder="Enter your password"
+      disabled
+    />
+    <br /><br />
 
     <!-- Checkbox -->
-    <label for="check">Male</label><input type="radio" name="gender" id="check" />
-    <br>
-    <label for="check">Female</label><input type="radio" name="gender" id="check" /><br>
-    <label for="check">Transgender</label><input type="radio" name="gender" id="check" />
-    
+    <label for="check">Male</label
+    ><input type="radio" name="gender" id="check" />
+    <br />
+    <label for="check">Female</label
+    ><input type="radio" name="gender" id="check" /><br />
+    <label for="check">Transgender</label
+    ><input type="radio" name="gender" id="check" />
   </body>
 </html>
