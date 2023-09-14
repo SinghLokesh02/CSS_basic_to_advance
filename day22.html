@@ -1,0 +1,59 @@
+<!-- CSS  var()-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS var</title>
+    <style>
+        :root{
+            --bg-color: red;
+            --text-color: white;
+            --font-weight: bold;
+            --font-style: italic;
+            --font-size: 10px;
+            --head-font:arial;
+        }
+        ul>li:first-child{
+            font-weight: var(--font-weight);
+        }
+        li:last-child{
+            font-style: var(--font-style);
+        }
+        
+        #heading1{
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-size: var(--font-size);
+            font-family: var(--head-font);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading1">Thsi is Heading 1</h1>
+    <h2 id="heading2">Thsi is Heading 2</h2>
+    <h3 id="heading3">Thsi is Heading 3</h3>
+    <h4 id="heading4">Thsi is Heading 4</h4>
+
+    <p id="para1">This is Paragraph 1</p>
+
+    <p class="para2">This is Paragraph Number 2</p>
+
+    <h1>This is Order List</h1>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <h1>This is Unorder List</h1>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+</body>
+</html>
