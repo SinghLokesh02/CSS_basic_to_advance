@@ -1,0 +1,76 @@
+<!-- CSS Display Flex -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Flex and flex item property</title>
+    <style>
+      .box {
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row,column,row-reverse,column-reverse */
+
+        justify-content: space-around;
+        /* justify-content: flex-start,flex-end,center,space-around,space-between */
+
+        align-items: center;
+        /* align-items: flex-start,flex-end,center,baseline,stretch */
+
+        /* flex-wrap: wrap; */
+        /* flex-wrap: nowrap,wrap,wrap-reverse */
+
+        /* align-content: start; */
+        /* align-content: flex-start,flex-end,center,space-around,space-between,stretch */
+
+        height: 100vh;
+
+        /* Shorthand for flex-direction and flex-wrap */
+        /* flex-flow: row wrap; */
+      }
+
+      .box1 {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        align-self: flex-end;
+        /* align-self: flex-end,flex-start,center */
+        flex-grow: 1;
+        flex-shrink: 4;
+      }
+      .box2 {
+        background-color: green;
+        width: 100px;
+        order: 2;
+        height: 100px;
+        align-self: center;
+        flex-grow: 2;
+        flex-shrink: 2;
+      }
+      .box3 {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        /* The least order value box come first in flexbox */
+        order: -1;
+        align-self: start;
+        flex-grow: 3;
+      }
+      .box4 {
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        align-self: flex-start;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="box1">Box-1</div>
+      <div class="box2">Box-2</div>
+      <div class="box3">Box-3</div>
+      <div class="box4">Box-4</div>
+    </div>
+  </body>
+</html>
