@@ -1,0 +1,63 @@
+<!-- CSS Animations Introduction -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animations</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background: red;
+        animation-name: change-bg-color;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        /* animation-iteration-count: 3; */
+
+        /* It will back to start */
+        /* animation-direction: alternate; */
+        animation-fill-mode: backwards;
+      }
+      @keyframes change-bg-color {
+        from {
+          background: red;
+        }
+        to {
+          background: blue;
+        }
+      }
+
+      /* Styling of box2 */
+      .box2 {
+        height: 10px;
+        width: 50vw;
+        border-radius: 10px;
+        background: rgb(238, 229, 230);
+        margin: 2vh 2vh;
+        animation-name: grow-width;
+        animation-duration: 3s;
+        /* animation-iteration-count: infinite; */
+        animation-fill-mode: forwards;
+      }
+      @keyframes grow-width {
+        from {
+          width: 0vw;
+          background-color: red;
+        }
+        to {
+          width: 45vw;
+          background-color: lime;
+        }
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="box"></div>
+    <div class="box2"></div>
+  </body>
+  
+</html>
