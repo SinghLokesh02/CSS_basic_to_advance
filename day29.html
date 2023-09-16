@@ -1,0 +1,92 @@
+<!-- CSS Transform Property -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transform Property</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 300px;
+        background: rgb(28, 155, 219);
+        border: 2px solid black;
+        margin: auto;
+
+        /* transform-origin: bottom; */
+        /* transform-origin: top; */
+        /* transform-origin: left; */
+        /* transform-origin: right; */
+
+        /* transform-origin: bottom right; */
+        /* transform-origin: top right; */
+        /* transform-origin: top left; */
+        /* transform-origin: bottom left; */
+        
+        /* transform-origin: center center; */
+        /* transform-origin: center left; */
+        /* transform-origin: center top; */
+        /* transform-origin: center bottom; */
+        transform-origin: center right;
+        /* transform-origin: center; */
+
+
+        transition: all 3s ease-in-out;
+      }
+      .box:hover {
+        /* It will rotate clockwise */
+        transform: rotate(360deg); 
+        
+        /* It will rotate anti-clockwise */
+        /* transform: rotate(-20deg);  */
+
+        /* It will rotate clockwise */
+        /* transform: rotate(50deg); */
+
+        /* For scale in X direction */
+        /* transform: scaleX(2); */
+
+        /* For scale in X direction */
+        /* transform: scaley(2); */
+
+        /* Scale in both direction with same value */
+        /* transform: scale(3); */
+
+        /* Scale in both direction with different value */
+        /* transform: scale(2, 3); */
+
+        /* skew in X direction */
+        /* transform: skewX(20deg); */
+
+        /* skew in Y direction */
+        /* transform: skewY(20deg); */
+
+        /* skew in both direction */
+        /* transform: skew(20deg, 20deg); */
+
+        /* translate in X direction */
+        /* transform: translateX(100px); */
+
+        /* translate in Y direction */
+        /* transform: translateY(100px); */
+
+        /* translate in both direction */
+        /* transform: translate(100px, 100px); */
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Css Transform Property</h1>
+
+    <div class="box">
+      <p id="para">Hey There</p>
+    </div>
+  </body>
+</html>
