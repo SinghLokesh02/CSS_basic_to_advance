@@ -1,0 +1,69 @@
+<!-- CSS Transition Part1 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transition</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        background: magenta;
+        position: relative;
+        /* transition-property: background, top, left; */
+        /* transition-duration: 5s, 5s, 5s; */
+        /* transition-delay: 2s, 2s, 2s; */
+        /* transition-timing-function: ease-in-out, ease-in-out, ease-in-out; */
+
+        /* transition: property duration timing-function delay; */
+        transition: all 2s ease-in-out;
+        margin: 15% 43%;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 9px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 35px;
+      }
+      .box:hover {
+        background: aqua;
+        height: 400px;
+        width: 400px;
+        transform: rotate(360deg);
+      }
+      p {
+        text-align: center;
+        position: relative;
+        top: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <p id="para">Hey There</p>
+    </div>
+
+    <script>
+      let box = document.querySelector(".box");
+      let get_p = document.querySelector("#para");
+      get_p.style.display = "none";
+      let count = 0;
+      box.addEventListener("mouseover", function () {
+        count++;
+        setTimeout(() => {
+          get_p.style.display = "block";
+        }, 500);
+      });
+      box.addEventListener("mouseout", function () {
+        count++;
+        setTimeout(() => {
+          get_p.innerHTML = "I am Lokesh Singh";
+        }, 3000);
+      });
+      box.addEventListener("mouseout", () => {
+        setTimeout(() => {
+          location.reload();
+        }, 6000);
+      });
+    </script>
+  </body>
+</html>
