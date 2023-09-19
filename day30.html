@@ -1,0 +1,113 @@
+<!-- CSS Overlays Property -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overlays Property</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .title {
+        margin: 1rem auto;
+        text-align: center;
+      }
+
+      .box {
+        border: 4px solid red;
+        max-width: 500px;
+        margin: auto;
+        position: relative;
+      }
+
+      .box img {
+        display: block;
+        width: 100%;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #454545;
+        color: rgb(240, 178, 178);
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 0.5rem 1.2em;
+        margin-top: 0.8rem;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn:hover{
+        background-color: #232323;
+        color: white;
+      }
+
+
+      .box-content{
+        /* border: 4px solid green; */
+        position: absolute;
+        z-index: 23;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+      }
+
+      .box-content h3{
+        font-size: 18px;
+      }
+
+      /* box-content is visible on hover*/
+        .box:hover .box-content {
+            opacity: 1;
+            left: 50%;
+        }
+
+
+      .box::after{
+        content: "";
+        /* border: 2px solid blue; */
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        background: rgba(0, 0, 0, 0.623);
+        opacity: 0;
+        z-index: 22;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+        .box:hover::after{
+            opacity: 1;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="title">CSS Overlay Property</h1>
+    <div class="box">
+      <img src="bg1.jpg" alt="Image" />
+      <div class="box-content">
+        <h3>Buy things at amazing price</h3>
+        <a href="https://instagram.com" class="btn">Get Insta</a>
+      </div>
+    </div>
+  </body>
+</html>
