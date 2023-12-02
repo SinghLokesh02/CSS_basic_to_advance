@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Forms</title>
+    <!-- /* CDN Bootstrap link of css*/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        form{
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            width: 30%;
+            
+        }
+        input[type="button"],input[type="submit"]{
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .white{
+            background-color: black;
+            color: orangered;
+        }
+        input[type="button"]:hover,input[type="submit"]:hover{
+            background-color: orangered;
+            color: black;
+        }
+
+        input[type="text"],input[type="password"]{
+            border: none;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            margin: 10px 0;
+            color: white;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0);
+            outline: none;
+        }
+        body{
+            background-image:url(formImg.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 97vh;
+            width: 98vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @media screen and (max-width: 768px) {
+            h1{
+                font-size: 15px
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid my-4">
+        <div class="row">
+                <form action="" method="post">
+                    <h1 class="text-white text-center">Register Here</h1>
+                    <input type="button" value="Login" class="white">
+                    <label for="name"></label><input type="text" name="" id="" placeholder="Enter Your Name">
+                    <label for="name"></label><input type="text" name="" id="" placeholder="Enter Your Email">
+                    <label for="name"></label><input type="password" name="" id="" placeholder="Enter Your Password">
+                    <input type="submit" value="Login Here" class="orange">
+                </form>
+        </div>
+       
+    </div>
+</body>
+</html>
