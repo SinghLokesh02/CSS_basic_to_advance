@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table Styling CSS</title>
     <style>
+      h1 {
+        text-align: center;
+        color: red;
+        text-decoration: underline;
+      }
+      table {
+        /* border-collapse:separate; */
+        /* border-spacing: 10px; All Side spacing */
+        border: 2px solid red;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 10px 20px;
+        table-layout: auto;
+        empty-cells: hide;
+      }
+      caption {
+        font-size: 30px;
+        font-weight: bold;
+        border: 2px solid red;
+        border-top: none;
+        caption-side: bottom;
+      }
+      tr {
+        border: 2px solid black;
+        text-align: center;
+        padding: 10px;
+        vertical-align: top;
+      }
 
-        h1{
-            text-align: center;
-            color: red;
-            text-decoration: underline;
-        }
-        table{
-            border: 2px solid red;
-            width: 100%;
-            /* border-collapse: collapse; */
-            border-collapse: collapse;
-            /* border-spacing: 10px; All Side spacing */
-            border-spacing: 10px 20px;
-
-            empty-cells: hide;
-        }
-        caption{
-            font-size: 30px;
-            font-weight: bold;
-            border: 2px solid red;
-            border-top: none;
-            caption-side: bottom;
-        }
-        tr{
-            border: 2px solid black;
-            text-align: center;
-            padding: 10px;
-            vertical-align:top;
-        }
-         
-        td{
-            /* border: 2px solid black; */
-            text-align: center;
-            padding: 10px;
-            vertical-align:top;
-        }
-        tr:nth-child(odd){
-            background-color: rgb(191, 238, 238);
-        }
-        tr:nth-child(even){
-            background-color: rgb(241, 166, 241);
-        }
+      td {
+        /* border: 2px solid black; */
+        text-align: center;
+        padding: 10px;
+        vertical-align: top;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(191, 238, 238);
+      }
+      tr:nth-child(even) {
+        background-color: rgb(241, 166, 241);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="heading1">HTML Table</h1>
 
     <table>
-        <caption>Table CSS</caption>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td></td>
-        </tr>
+      <caption>
+        Table CSS
+      </caption>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td></td>
+      </tr>
     </table>
-
-</body>
+  </body>
 </html>
