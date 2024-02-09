@@ -1,0 +1,67 @@
+<!-- Media Query Basics -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+
+    <style>
+      
+      body {
+        color: red;
+        background-color: black;
+      }
+
+      /* @media (orientation: portrait) {
+        body {
+          background-color: green;
+        }
+      }
+      
+      @media (orientation: landscape) {
+        body {
+          background-color: blue;
+        }
+      } */
+
+
+      /* Max - Width */
+      /* @media (max-width: 500px) {
+          body {
+              background-color: yellow;
+            }
+            h1 {
+                color: green;
+            }
+        } */
+
+
+      /* Min- Width */
+      /* @media (min-width: 500px) {
+        body {
+          background-color: yellow;
+        }
+        h1 {
+          color: green;
+        }
+      } */
+
+
+      /* The above can also be written as  */
+      @media (width>=500px) {
+        body {
+          background-color: yellow;
+        }
+        h1 {
+          color: green;
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 id="h1">This is H1 Tag</h1>
+  </body>
+</html>
