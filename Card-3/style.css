@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgb(246, 173, 39),
+    rgb(246, 83, 83),
+    rgb(142, 4, 169)
+  );
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 647px) {
+  .container {
+    height: fit-content;
+  }
+}
+.card {
+  margin: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.503);
+  transition: filter .5s ease-in-out;
+}
+
+.container:hover .card:not(:hover) {
+  filter: blur(5px);
+}
+
+.card:not(.numbering) {
+  background-color: white;
+}
+.numbering {
+  height: 128px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-bottom-left-radius: 93px;
+  border-bottom-right-radius: 93px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+[number="one"] {
+  background-color: orange;
+}
+[number="two"] {
+  background-color: red;
+}
+[number="three"] {
+  background-color: rgb(142, 4, 169);
+}
+
+.text {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+button {
+  border-radius: 15px;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+}
