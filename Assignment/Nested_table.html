@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Table in HTML</title>
+  </head>
+  <body>
+    <h1>Nested Tables</h1>
+
+    <table border="1">
+      <!-- Row - 1 -->
+      <tr>
+        <th>Header Column 1</th>
+        <th>Header Column 2</th>
+        <th>Header Column 3</th>
+        <th>Header Column 4</th>
+      </tr>
+
+      <!-- Row - 2 -->
+      <tr>
+        <td>Row 2 Item 1</td>
+        <td>Row 2 Item 2</td>
+        <td rowspan="2">
+          Row 2: Nested Table 1
+
+          <table border="1">
+            <tr>
+              <td>Row 1 Header</td>
+              <td>item</td>
+            </tr>
+            <tr>
+              <td>Row 2 Header</td>
+              <td>item</td>
+            </tr>
+            <tr>
+              <td>Row 3 Header</td>
+              <td>item</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          Row 2 Item 4 <br />
+          A second line
+        </td>
+      </tr>
+
+      <!-- Row - 3 -->
+      <tr>
+        <td>
+          Row 3: Nested Table 2
+
+          <table border="1">
+            <tr>
+              <td>Row 1 Header</td>
+              <td>item</td>
+            </tr>
+            <tr>
+              <td>Row 2 Header</td>
+              <td>item</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>Row -3 Item 2</td>
+        <td rowspan="2">Row -3 Item 3</td>
+      </tr>
+
+      <tr>
+        <td>Row 4 - Item 1</td>
+        <td>Row 4 - Item 2</td>
+        <td>Row 4 - Item 3</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">Row 5 - Last row outer table</td>
+      </tr>
+    </table>
+  </body>
+</html>
