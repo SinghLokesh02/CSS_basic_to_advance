@@ -1,0 +1,66 @@
+<!-- Article - How to center Javascript alert box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered JavaScript Alert Box</title>add 
+<style>
+/* CSS for overlay */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
+
+/* CSS for alert box */
+.alert-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.button-div{
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
+}
+ 
+</style>
+</head>
+<body>
+
+<!-- Button to trigger alert -->
+<div class="button-div">
+    <button onclick="showAlert()">Click Here</button>
+</div>
+
+<!-- JavaScript code to show centered alert -->
+<script>
+function showAlert() {
+  // Create overlay
+  var overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  
+  // Create alert box
+  var alertBox = document.createElement('div');
+  alertBox.className = 'alert-box';
+  alertBox.textContent = 'This is a centered alert message!';
+  
+  // Append alert box to overlay
+  overlay.appendChild(alertBox);
+  
+  // Append overlay to body
+  document.body.appendChild(overlay);
+}
+</script>
+
+</body>
+</html>
