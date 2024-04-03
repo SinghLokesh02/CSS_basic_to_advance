@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Image with Button</title>
+</head>
+<body>
+    
+    <div class="container">
+        <button onclick="downloadImage()">Download Image</button>
+    </div>
+
+    <script>
+        function downloadImage() {
+            // Get the image URL
+            var imageUrl = 'https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg'; // Replace 'image.jpg' with the URL of your image
+
+            // Create a new anchor element
+            var downloadLink = document.createElement('a');
+
+            // Set the href attribute to the image URL
+            downloadLink.href = imageUrl;
+
+            // Set the download attribute to specify the file name
+            downloadLink.download = 'image.jpg'; // Replace 'image.jpg' with the desired file name
+
+            // Append the anchor element to the document body
+            document.body.appendChild(downloadLink);
+
+            // Click the anchor element programmatically to trigger the download
+            downloadLink.click();
+
+            // Remove the anchor element from the document body
+            document.body.removeChild(downloadLink);
+        }
+    </script>
+</body>
+</html>
