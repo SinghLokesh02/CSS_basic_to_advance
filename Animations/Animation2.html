@@ -1,0 +1,55 @@
+<!-- Animation -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        body{
+            background-color: black;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: wheat;
+        }
+        div{
+            background-color: red;
+            padding: 10px 20px;
+            border-radius: 10px;
+            animation-name: Ghumao;
+            animation-duration: 1000ms;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* animation-direction: alternate; */
+            animation-fill-mode: forwards;
+            animation-timing-function: cubic-bezier(1, -0.36, 0, 1.35);
+        }
+        h1{
+            background-color: green;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        @keyframes Ghumao {
+            from{
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: rotate(360deg);
+            }
+        }
+         
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>
