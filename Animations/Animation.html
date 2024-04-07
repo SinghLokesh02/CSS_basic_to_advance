@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color: red;
+            text-align: center;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: seagreen;
+            margin: auto;
+            margin-top: 40px;
+            border: 2px solid lime;
+            animation-name: Roll;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-delay: 3s;
+            animation-timing-function: cubic-bezier(1, -0.28, 0.05, 1.52);
+        }
+
+        @keyframes Roll {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(150deg);
+                background-color: rgb(114, 222, 236);
+                border: 3px solid blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation in CSS</h1>
+
+    <div class="box"></div>
+</body>
+</html>
