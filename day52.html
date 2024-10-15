@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Practice</title>
+    <style>
+        .container{
+            width: 100%;
+            border: 5px solid green;
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            
+            width: 20%;
+            background-color: red;
+            margin: 10px;
+        }
+        .box1,.box2,.box3,.box4{
+            float: left;
+            padding: 20px;
+        }
+        .clearfix{
+            clear: both;
+        }
+
+        /* We can use this styling as alternative of clearfix ⭐⭐⭐ */
+        /* .container::after{
+            display: block;
+            content: "";
+            clear: both;
+        } */
+
+        @media (max-width : 1224px) {
+            .container{
+                padding: 20px;
+            }
+            .box1,.box2,.box3,.box4{
+                float: none;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h1>Boxes</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, amet facilis ex explicabo, voluptas vitae cum laudantium temporibus esse voluptates, rem magni. Accusantium magnam ducimus iure tempora, assumenda laboriosam exercitationem omnis ipsam tenetur a dicta voluptatum fuga magni debitis placeat aperiam facere, autem impedit repudiandae voluptas, quas consequatur! Officia repellendus sunt pariatur cum expedita necessitatibus, tempore nulla unde ullam odit, vero dicta aspernatur enim architecto aut nihil asperiores molestiae accusamus rem quis illo. Consequatur sint, architecto unde pariatur nulla culpa sapiente corrupti eaque, voluptate saepe distinctio omnis laudantium? Eius architecto asperiores quas obcaecati est optio accusamus culpa reiciendis mollitia itaque.
+        </div>
+        <div class="box box2"> 
+            <h1>Boxes</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptate, est assumenda, vitae corporis deleniti quidem laborum placeat magni ducimus nihil necessitatibus ea ullam id expedita rerum quam dolorum odit atque eligendi. Sapiente nesciunt et nisi odit ipsam consectetur eaque quae eligendi nihil eum optio ab est, cupiditate architecto? Accusantium iure necessitatibus natus tempore delectus mollitia deserunt corrupti aut eos. Placeat ut culpa, quasi mollitia eligendi eaque quibusdam debitis magnam rerum eum perferendis, repudiandae quo laboriosam, sed amet ipsam! Nisi odit delectus eius ex veniam dolorem beatae nobis molestiae atque officia temporibus quos vitae unde, impedit eligendi exercitationem cumque? Qui!
+        </div>
+        <div class="box box3">
+            <h1>Boxes</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora minus atque sit doloribus quasi eligendi in asperiores accusamus debitis, vero, minima saepe laborum numquam praesentium voluptatibus nobis quo. Sed optio aperiam amet, modi omnis repellat nisi dolor! Eaque cupiditate cumque tempora hic itaque iure molestias doloribus provident expedita ducimus ab et aspernatur, dolor natus amet quas omnis atque laborum? Molestiae ad totam eum ducimus voluptates vel doloremque debitis repudiandae quaerat suscipit nam, mollitia officia vitae pariatur consequatur tempora porro consequuntur eaque repellendus quae, voluptatibus hic aspernatur! Aperiam, et aliquam facilis nemo placeat debitis enim soluta dolorum eveniet, culpa obcaecati quos.
+        </div>
+        <div class="box box4">
+            <h1>Boxes</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci error explicabo, quas magnam deserunt doloribus ab eaque beatae maxime enim placeat aut reiciendis asperiores eligendi magni, iste obcaecati consequuntur, aspernatur voluptatibus illum nisi. Odit, voluptatem accusamus dignissimos beatae expedita maiores nostrum rerum in. Veritatis ipsam et iusto tempora saepe voluptatibus dolore, facilis ducimus sit libero cupiditate in repellat sint ex doloremque quisquam eaque expedita hic fugiat amet corrupti nesciunt iste! Commodi aspernatur necessitatibus porro quisquam! Placeat ut consectetur quis labore necessitatibus esse obcaecati cupiditate consequuntur, cumque iusto dolore sunt totam sequi ipsam repellat vel dignissimos aut doloremque animi nostrum!
+        </div>
+
+        <div class="clearfix"></div>
+        <!-- We can also do this without using clearfix with the help of ::after pseudo element and content proprty -->
+    </div>
+</body>
+</html>
