@@ -1,0 +1,32 @@
+<!-- Pseudo Elements -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+
+    <!-- 
+    1. first-letter
+    2. first-line
+    3. selection
+    4. input::placeholder
+    5. after 
+    6. before
+    
+    ⭐ Use of content is must in before and after
+    -->
+
+    <style>
+        h1::after{
+            content: "This is Before h1 ";
+            color: red;
+            background-color: orange;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sed saepe nam nemo perferendis ipsa eaque nobis exercitationem, consequuntur deserunt aliquid harum corporis quisquam. Iste fugiat accusantium enim? Tenetur, suscipit.</h1>
+</body>
+</html>
