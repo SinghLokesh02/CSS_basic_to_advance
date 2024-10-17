@@ -1,0 +1,49 @@
+<!-- Boucing Ball Animation -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bouncing Ball</title>
+    <style>
+      .container {
+        background-color: lime;
+        height: 400px;
+        display: flex;
+        align-items: end;
+      }
+      .box {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: relative;
+        animation: bounceX 5s linear infinite,
+          bounceY 1s infinite alternate ease-out;
+        filter: drop-shadow(26px 20px 22px red) invert(10%);
+      }
+      @keyframes bounceX {
+        from {
+          left: 0;
+        }
+        to {
+          left: 90%;
+        }
+      }
+      @keyframes bounceY {
+        from {
+          bottom: 0;
+        }
+        to {
+          bottom: 80%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
